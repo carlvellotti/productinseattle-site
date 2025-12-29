@@ -81,7 +81,7 @@ export function EmailCapture({
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@company.com"
+              placeholder="you@email.com"
               required
               className="input input-dark flex-1"
             />
@@ -116,7 +116,7 @@ export function EmailCapture({
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="you@company.com"
+          placeholder="you@email.com"
           required
           className={`input flex-1 ${dark ? "input-dark" : ""}`}
         />

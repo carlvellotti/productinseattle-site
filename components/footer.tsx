@@ -25,7 +25,12 @@ export function Footer() {
             <ul className="space-y-2 text-white/70">
               <li>
                 <Link href="/events" className="hover:text-white transition-colors">
-                  Events
+                  Upcoming Events
+                </Link>
+              </li>
+              <li>
+                <Link href="/subscribe" className="hover:text-white transition-colors">
+                  Subscribe
                 </Link>
               </li>
               <li>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/events", label: "Events" },
+  { href: "/events", label: "Upcoming Events" },
   { href: "/archive", label: "Archive" },
   { href: "/submit", label: "Submit Event" },
   { href: "/about", label: "About" },
@@ -38,7 +38,7 @@ export function Nav() {
               </Link>
             ))}
             <Link
-              href="/#subscribe"
+              href="/subscribe"
               className="btn btn-sm btn-green"
             >
               Subscribe
@@ -70,7 +70,7 @@ export function Nav() {
                 </Link>
               ))}
               <Link
-                href="/#subscribe"
+                href="/subscribe"
                 className="btn btn-md btn-green mt-2"
                 onClick={() => setIsOpen(false)}
               >
