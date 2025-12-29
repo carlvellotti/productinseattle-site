@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
-import { Nav, Footer } from "@/components";
+import { Nav, Footer, GoogleAnalytics } from "@/components";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -24,15 +26,16 @@ export const metadata: Metadata = {
   description:
     "Your guide to Seattle's product scene. Events, jobs, and community for product people in the Pacific Northwest.",
   keywords: [
-    "Seattle",
-    "product",
-    "product management",
-    "product design",
-    "Seattle tech",
-    "product events",
-    "product community",
-    "Pacific Northwest",
-    "PNW",
+    "Seattle PM events",
+    "Seattle product management events",
+    "Seattle product manager meetup",
+    "Seattle tech events",
+    "Seattle product community",
+    "product management Seattle",
+    "PM networking Seattle",
+    "Seattle tech meetups",
+    "Pacific Northwest product",
+    "PNW tech events",
   ],
   authors: [{ name: "Carl Vellotti" }],
   creator: "Carl Vellotti",
@@ -46,9 +49,9 @@ export const metadata: Metadata = {
       "Your guide to Seattle's product scene. Events, jobs, and community for product people in the Pacific Northwest.",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/opengraph-image.jpg",
+        width: 2400,
+        height: 1260,
         alt: "Product in Seattle",
       },
     ],
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
     title: "Product in Seattle - Seattle's Product Community",
     description:
       "Your guide to Seattle's product scene. Events, jobs, and community for product people in the Pacific Northwest.",
-    images: ["/og-image.jpg"],
+    images: ["/opengraph-image.jpg"],
   },
   robots: {
     index: true,
@@ -81,6 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bricolage.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col">
+        {GA_MEASUREMENT_ID && <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />}
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

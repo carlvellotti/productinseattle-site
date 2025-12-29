@@ -1,12 +1,19 @@
 import { Metadata } from "next";
 import { Filter, Calendar } from "lucide-react";
-import { EventCard } from "@/components";
+import { EventCard, EventStructuredData } from "@/components";
 import { getUpcomingEvents } from "@/data/events";
 
 export const metadata: Metadata = {
-  title: "Events",
+  title: "Seattle PM Events & Product Management Meetups",
   description:
-    "Upcoming product events in Seattle. Meetups, workshops, happy hours, and conferences for product people in the Pacific Northwest.",
+    "Find Seattle product management events, PM meetups, networking happy hours, and tech conferences. Updated weekly with the best events for product people in Seattle.",
+  keywords: [
+    "Seattle PM events",
+    "Seattle product management events",
+    "Seattle product manager meetup",
+    "Seattle tech networking",
+    "product management meetup Seattle",
+  ],
 };
 
 const eventTypes = [
@@ -24,6 +31,7 @@ export default function EventsPage() {
 
   return (
     <div>
+      <EventStructuredData events={allEvents} />
       {/* Header */}
       <section className="bg-[#164E63] text-white py-16 md:py-24">
         <div className="container-wide">
