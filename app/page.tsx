@@ -12,7 +12,7 @@ export default function Home() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/hero-bg.png')" }}
+          style={{ backgroundImage: "url('/hero-bg.webp')" }}
         />
         {/* Dark teal overlay */}
         <div className="absolute inset-0 bg-hero-overlay" />
