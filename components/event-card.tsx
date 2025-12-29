@@ -171,7 +171,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
           </div>
 
           {event.description && (
-            <p className="mt-1 text-sm text-[#64748b] line-clamp-2">
+            <p className="mt-1 text-sm text-[#64748b]">
               {event.description}
             </p>
           )}
