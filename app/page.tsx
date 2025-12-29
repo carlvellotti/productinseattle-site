@@ -1,45 +1,10 @@
 import { Calendar, Users, Mail, ArrowRight, MapPin } from "lucide-react";
-import { EmailCapture, EventCard, Event } from "@/components";
+import { EmailCapture, EventCard } from "@/components";
+import { getUpcomingEvents } from "@/data/events";
 
-// Sample events - in production, these would come from your data source
-const upcomingEvents: Event[] = [
-  {
-    id: "1",
-    title: "Product Happy Hour at Optimism Brewing",
-    date: "2025-01-15",
-    time: "6:00 PM",
-    location: "Optimism Brewing",
-    neighborhood: "Capitol Hill",
-    description: "Casual drinks and networking with Seattle product folks. Good vibes, no agenda.",
-    type: "networking",
-    url: "#",
-    isFeatured: true,
-  },
-  {
-    id: "2",
-    title: "AI Product Strategy Workshop",
-    date: "2025-01-22",
-    time: "6:30 PM",
-    location: "WeWork South Lake Union",
-    neighborhood: "SLU",
-    description: "Hands-on workshop on integrating AI into your product roadmap.",
-    type: "workshop",
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Women in Product Seattle Meetup",
-    date: "2025-01-28",
-    time: "5:30 PM",
-    location: "Amazon Meeting Center",
-    neighborhood: "Downtown",
-    type: "networking",
-    url: "#",
-  },
-];
-
-const featuredEvent = upcomingEvents.find((e) => e.isFeatured);
-const otherEvents = upcomingEvents.filter((e) => !e.isFeatured);
+const upcomingEvents = getUpcomingEvents(4);
+const featuredEvent = upcomingEvents.find((e) => e.featured);
+const otherEvents = upcomingEvents.filter((e) => !e.featured).slice(0, 2);
 
 export default function Home() {
   return (

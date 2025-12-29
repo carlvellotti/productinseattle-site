@@ -1,17 +1,5 @@
-import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
-
-export interface Event {
-  id: string;
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  neighborhood?: string;
-  description?: string;
-  url?: string;
-  type?: "networking" | "workshop" | "talk" | "social" | "conference";
-  isFeatured?: boolean;
-}
+import { Calendar, MapPin, DollarSign, ExternalLink } from "lucide-react";
+import { Event } from "@/data/events";
 
 interface EventCardProps {
   event: Event;
@@ -108,7 +96,20 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
                 <MapPin className="w-4 h-4" />
                 {event.location}
               </span>
+              {event.cost && (
+                <span className="flex items-center gap-1.5">
+                  <DollarSign className="w-4 h-4" />
+                  {event.cost}
+                </span>
+              )}
             </div>
+
+            {event.carlsNote && (
+              <div className="mt-4 p-3 bg-white/10 rounded-lg">
+                <p className="text-sm text-white/90 italic">&ldquo;{event.carlsNote}&rdquo;</p>
+                <p className="text-xs text-white/50 mt-1">- Carl</p>
+              </div>
+            )}
 
             {event.url && (
               <a
@@ -184,6 +185,12 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
               <MapPin className="w-4 h-4 text-[#94a3b8]" />
               {event.neighborhood || event.location}
             </span>
+            {event.cost && (
+              <span className="flex items-center gap-1.5">
+                <DollarSign className="w-4 h-4 text-[#94a3b8]" />
+                {event.cost}
+              </span>
+            )}
           </div>
         </div>
       </div>
