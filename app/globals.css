@@ -1,0 +1,570 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ==========================================================================
+   PRODUCT IN SEATTLE - Design System
+   Aesthetic: "PNW Tech Community"
+   - Teal as professional foundation
+   - Green for action/CTAs that pop
+   - Seattle-inspired, community-focused
+   - Clean, modern, approachable
+   ========================================================================== */
+
+:root {
+  /* Brand Colors - Teal (Primary) */
+  --color-teal: #0891B2;
+  --color-teal-dark: #164E63;
+  --color-teal-darker: #0e3a47;
+  --color-teal-light: #06B6D4;
+  --color-teal-wash: #ECFEFF;
+
+  /* Brand Colors - Green (Action) */
+  --color-green: #22C55E;
+  --color-green-dark: #16A34A;
+  --color-green-darker: #15803D;
+  --color-green-light: #4ADE80;
+  --color-green-wash: #F0FDF4;
+  --color-green-muted: #DCFCE7;
+
+  /* Neutrals - Cool tinted */
+  --color-ink: #0f172a;
+  --color-charcoal: #1e293b;
+  --color-slate-900: #1e293b;
+  --color-slate-800: #334155;
+  --color-slate-700: #475569;
+  --color-slate-600: #64748b;
+  --color-slate-500: #94a3b8;
+  --color-slate-400: #cbd5e1;
+  --color-slate-300: #e2e8f0;
+  --color-slate-200: #e5e7eb;
+  --color-slate-100: #f1f5f9;
+  --color-slate-50: #f8fafc;
+
+  /* Semantic */
+  --color-success: #22C55E;
+  --color-success-light: #DCFCE7;
+  --color-error: #dc2626;
+  --color-error-light: #fee2e2;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 2px 4px rgba(15, 23, 42, 0.04), 0 4px 8px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 4px 8px rgba(15, 23, 42, 0.04), 0 8px 16px rgba(15, 23, 42, 0.06), 0 16px 32px rgba(15, 23, 42, 0.08);
+  --shadow-xl: 0 8px 16px rgba(15, 23, 42, 0.04), 0 16px 32px rgba(15, 23, 42, 0.08), 0 32px 64px rgba(15, 23, 42, 0.12);
+  --shadow-green: 0 4px 14px rgba(34, 197, 94, 0.3);
+  --shadow-teal: 0 4px 14px rgba(8, 145, 178, 0.25);
+
+  /* Theme */
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  /* Animation */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Brand - Teal */
+  --color-teal: var(--color-teal);
+  --color-teal-dark: var(--color-teal-dark);
+  --color-teal-darker: var(--color-teal-darker);
+  --color-teal-light: var(--color-teal-light);
+  --color-teal-wash: var(--color-teal-wash);
+
+  /* Brand - Green */
+  --color-green: var(--color-green);
+  --color-green-dark: var(--color-green-dark);
+  --color-green-darker: var(--color-green-darker);
+  --color-green-light: var(--color-green-light);
+  --color-green-wash: var(--color-green-wash);
+  --color-green-muted: var(--color-green-muted);
+
+  /* Neutrals */
+  --color-ink: var(--color-ink);
+  --color-charcoal: var(--color-charcoal);
+  --color-slate-900: var(--color-slate-900);
+  --color-slate-800: var(--color-slate-800);
+  --color-slate-700: var(--color-slate-700);
+  --color-slate-600: var(--color-slate-600);
+  --color-slate-500: var(--color-slate-500);
+  --color-slate-400: var(--color-slate-400);
+  --color-slate-300: var(--color-slate-300);
+  --color-slate-200: var(--color-slate-200);
+  --color-slate-100: var(--color-slate-100);
+  --color-slate-50: var(--color-slate-50);
+
+  /* Fonts */
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-inter);
+}
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-green-muted);
+  color: var(--color-green-darker);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+}
+
+/* Animation utility classes */
+.animate-fade-in {
+  animation: fade-in 0.7s var(--ease-out-expo) both;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s var(--ease-out-expo) both;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s var(--ease-out-expo) both;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s var(--ease-out-expo) both;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.stagger-1 { animation-delay: 0ms; }
+.stagger-2 { animation-delay: 80ms; }
+.stagger-3 { animation-delay: 160ms; }
+.stagger-4 { animation-delay: 240ms; }
+.stagger-5 { animation-delay: 320ms; }
+.stagger-6 { animation-delay: 400ms; }
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.heading-xl {
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+  font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.heading-lg {
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+  font-size: clamp(1.875rem, 4vw + 0.5rem, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.heading-md {
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.heading-sm {
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.body-lg {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-radius: 0.625rem;
+  transition: all 0.25s var(--ease-out-quart);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.0625rem;
+}
+
+.btn-md {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+/* Green CTA button - the action color */
+.btn-green {
+  background: var(--color-green);
+  color: white;
+  box-shadow: var(--shadow-green);
+}
+
+.btn-green:hover {
+  background: var(--color-green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.4);
+}
+
+.btn-green:active {
+  transform: translateY(0);
+}
+
+/* Teal button - secondary actions */
+.btn-teal {
+  background: var(--color-teal);
+  color: white;
+  box-shadow: var(--shadow-teal);
+}
+
+.btn-teal:hover {
+  background: var(--color-teal-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(8, 145, 178, 0.35);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-slate-700);
+  border: 2px solid var(--color-slate-200);
+}
+
+.btn-ghost:hover {
+  background: white;
+  border-color: var(--color-slate-300);
+  color: var(--color-ink);
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.5);
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--color-slate-200);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.35s var(--ease-out-quart);
+}
+
+.card:hover {
+  border-color: var(--color-teal-wash);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card-green {
+  background: var(--color-green-wash);
+  border-color: var(--color-green-muted);
+}
+
+.card-teal {
+  background: var(--color-teal-wash);
+  border-color: #cffafe;
+}
+
+/* Event Cards */
+.event-card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--color-slate-200);
+  padding: 1.5rem;
+  transition: all 0.3s var(--ease-out-quart);
+}
+
+.event-card:hover {
+  border-color: var(--color-green-muted);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  letter-spacing: 0.01em;
+}
+
+.badge-green {
+  background: var(--color-green-muted);
+  color: var(--color-green-darker);
+}
+
+.badge-teal {
+  background: var(--color-teal-wash);
+  color: var(--color-teal-dark);
+}
+
+.badge-slate {
+  background: var(--color-slate-100);
+  color: var(--color-slate-700);
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  background: white;
+  border: 2px solid var(--color-slate-200);
+  border-radius: 0.625rem;
+  transition: all 0.2s;
+}
+
+.input::placeholder {
+  color: var(--color-slate-400);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-teal);
+  box-shadow: 0 0 0 4px var(--color-teal-wash);
+}
+
+.input-dark {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.input-dark::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.input-dark:focus {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+}
+
+/* ==========================================================================
+   BACKGROUNDS & OVERLAYS
+   ========================================================================== */
+
+.bg-teal-gradient {
+  background: linear-gradient(135deg, var(--color-teal-dark) 0%, var(--color-teal) 100%);
+}
+
+.bg-hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.75) 0%,
+    rgba(15, 23, 42, 0.85) 50%,
+    rgba(15, 23, 42, 0.9) 100%
+  );
+}
+
+/* ==========================================================================
+   DIVIDERS & DECORATIONS
+   ========================================================================== */
+
+.divider-green {
+  height: 4px;
+  width: 64px;
+  background: linear-gradient(90deg, var(--color-green), var(--color-teal-light));
+  border-radius: 9999px;
+}
+
+.divider-teal {
+  height: 4px;
+  width: 64px;
+  background: var(--color-teal);
+  border-radius: 9999px;
+}
+
+/* ==========================================================================
+   UTILITIES
+   ========================================================================== */
+
+.container-tight {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.container-wide {
+  max-width: 76rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-tight,
+  .container-wide {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.hover-lift {
+  transition: transform 0.3s var(--ease-out-quart);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Link underline animation */
+.link-underline {
+  position: relative;
+  color: var(--color-teal);
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s var(--ease-out-quart);
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Section spacing */
+.section-y {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-y {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* ==========================================================================
+   STRUCTURED DATA / SEO HELPERS
+   ========================================================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
