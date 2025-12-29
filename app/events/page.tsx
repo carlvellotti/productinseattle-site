@@ -21,8 +21,6 @@ const eventTypes = [
 
 export default function EventsPage() {
   const allEvents = getUpcomingEvents();
-  const featuredEvent = allEvents.find((e) => e.featured);
-  const upcomingEvents = allEvents.filter((e) => !e.featured);
 
   return (
     <div>
@@ -59,17 +57,14 @@ export default function EventsPage() {
             </div>
           </div>
 
-          {/* Featured Event */}
-          {featuredEvent && (
-            <div className="mb-8">
-              <EventCard event={featuredEvent} variant="featured" />
-            </div>
-          )}
-
-          {/* Events Grid */}
-          <div className="grid gap-4 md:grid-cols-2">
-            {upcomingEvents.map((event) => (
-              <EventCard key={event.id} event={event} />
+          {/* Events List */}
+          <div className="flex flex-col gap-4">
+            {allEvents.map((event) => (
+              <EventCard
+                key={event.id}
+                event={event}
+                variant={event.featured ? "featured" : "default"}
+              />
             ))}
           </div>
 
@@ -82,7 +77,7 @@ export default function EventsPage() {
         <div className="container-wide text-center">
           <h3 className="heading-sm text-[#0f172a]">Know about an event?</h3>
           <p className="mt-2 text-[#64748b]">
-            Help us keep this list fresh. Submit events you think Seattle product folks should know about.
+            Help me keep this list fresh. Submit events you think Seattle product folks should know about.
           </p>
           <a href="/submit" className="btn btn-md btn-green mt-6 inline-flex">
             Submit an Event

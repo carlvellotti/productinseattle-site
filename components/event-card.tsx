@@ -60,34 +60,30 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
 
   if (variant === "featured") {
     return (
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#164E63] to-[#0891B2] text-white p-8">
-        {/* Featured badge */}
-        <div className="absolute top-4 right-4">
-          <span className="badge bg-[#22C55E] text-white text-xs">Featured</span>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Date block */}
-          <div className="text-center md:text-left">
-            <div className="inline-block bg-white/10 rounded-xl p-4">
-              <div className="text-sm font-semibold text-[#22C55E] uppercase">
-                {month}
-              </div>
-              <div className="text-4xl font-bold font-[family-name:var(--font-bricolage)]">
-                {day}
-              </div>
-              <div className="text-sm text-white/70">{weekday}</div>
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#164E63] to-[#0891B2] text-white p-6 md:p-8">
+        <div className="flex gap-4 md:gap-6">
+          {/* Date block - always on side */}
+          <div className="text-center min-w-[56px] md:min-w-[72px]">
+            <div className="text-xs font-semibold text-[#22C55E] uppercase tracking-wide">
+              {month}
             </div>
+            <div className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-bricolage)] leading-none">
+              {day}
+            </div>
+            <div className="text-xs text-white/70 mt-1">{weekday}</div>
           </div>
 
           {/* Content */}
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
+            <span className="inline-flex items-center gap-1 badge bg-white/15 text-white/90 text-xs mb-2">
+              <span>⭐</span> Carl Recommended
+            </span>
             <h3 className="heading-md text-white">{event.title}</h3>
             {event.description && (
               <p className="mt-2 text-white/80">{event.description}</p>
             )}
 
-            <div className="mt-4 flex flex-wrap gap-4 text-sm text-white/70">
+            <div className="mt-4 flex flex-wrap gap-3 md:gap-4 text-sm text-white/70">
               <span className="flex items-center gap-1.5">
                 <Calendar className="w-4 h-4" />
                 {event.time}
@@ -106,8 +102,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
 
             {event.carlsNote && (
               <div className="mt-4 p-3 bg-white/10 rounded-lg">
-                <p className="text-sm text-white/90 italic">&ldquo;{event.carlsNote}&rdquo;</p>
-                <p className="text-xs text-white/50 mt-1">- Carl</p>
+                <p className="text-sm text-white/90"><span className="font-semibold">Carl&apos;s note:</span> {event.carlsNote}</p>
               </div>
             )}
 
@@ -145,29 +140,17 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-start justify-between gap-2">
-            <div>
-              {event.type && (
-                <span
-                  className={`badge text-xs mb-2 ${typeStyle.bg} ${typeStyle.text}`}
-                >
-                  {event.type.charAt(0).toUpperCase() + event.type.slice(1)}
-                </span>
-              )}
-              <h3 className="font-semibold text-[#0f172a] group-hover:text-[#164E63] transition-colors">
-                {event.title}
-              </h3>
-            </div>
-            {event.url && (
-              <a
-                href={event.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 p-2 rounded-lg text-[#94a3b8] hover:text-[#22C55E] hover:bg-[#F0FDF4] transition-colors"
+          <div>
+            {event.type && (
+              <span
+                className={`badge text-xs mb-2 ${typeStyle.bg} ${typeStyle.text}`}
               >
-                <ExternalLink className="w-4 h-4" />
-              </a>
+                {event.type.charAt(0).toUpperCase() + event.type.slice(1)}
+              </span>
             )}
+            <h3 className="font-semibold text-[#0f172a] group-hover:text-[#164E63] transition-colors">
+              {event.title}
+            </h3>
           </div>
 
           {event.description && (
@@ -192,6 +175,24 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
               </span>
             )}
           </div>
+
+          {event.carlsNote && (
+            <div className="mt-3 p-3 bg-[#F0FDF4] rounded-lg">
+              <p className="text-sm text-[#64748b]"><span className="font-semibold text-[#0f172a]">Carl&apos;s note:</span> {event.carlsNote}</p>
+            </div>
+          )}
+
+          {event.url && (
+            <a
+              href={event.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#0891B2] hover:text-[#164E63] transition-colors"
+            >
+              Get Details
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          )}
         </div>
       </div>
     </div>

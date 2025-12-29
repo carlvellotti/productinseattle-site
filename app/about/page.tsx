@@ -1,11 +1,12 @@
 import { Metadata } from "next";
-import { MapPin, Mail, Coffee } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
+import Image from "next/image";
 import { EmailCapture } from "@/components";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Product in Seattle is the community newsletter for product people in the Pacific Northwest. Learn more about who we are and why we started this.",
+    "Product in Seattle is a community newsletter for product people in the Pacific Northwest. Learn more about who I am and why I started this.",
 };
 
 export default function AboutPage() {
@@ -17,7 +18,7 @@ export default function AboutPage() {
           <div className="max-w-2xl">
             <h1 className="heading-xl">About Product in Seattle</h1>
             <p className="mt-4 text-xl text-white/80">
-              Seattle&apos;s product community is better than you think. We just needed a place to find each other.
+              Seattle&apos;s product community is better than you think. I just wanted to make it easier to find each other.
             </p>
           </div>
         </div>
@@ -47,7 +48,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 p-8 bg-[#F0FDF4] rounded-2xl">
-            <h3 className="heading-sm text-[#0f172a]">What we believe</h3>
+            <h3 className="heading-sm text-[#0f172a]">What I believe</h3>
             <ul className="mt-4 space-y-3 text-[#475569]">
               <li className="flex items-start gap-3">
                 <span className="w-6 h-6 rounded-full bg-[#22C55E] text-white flex items-center justify-center shrink-0 mt-0.5">
@@ -55,7 +56,7 @@ export default function AboutPage() {
                 </span>
                 <span>
                   <strong className="text-[#0f172a]">Community over audience.</strong>{" "}
-                  We&apos;re building connections, not just an email list.
+                  I&apos;m building connections, not just an email list.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -86,9 +87,13 @@ export default function AboutPage() {
         <div className="container-tight">
           <h2 className="heading-md text-[#0f172a]">Who&apos;s behind this?</h2>
           <div className="mt-6 flex flex-col sm:flex-row gap-6 items-start">
-            <div className="w-24 h-24 rounded-2xl bg-[#164E63] flex items-center justify-center text-3xl shrink-0">
-              <Coffee className="w-10 h-10 text-white" />
-            </div>
+            <Image
+              src="/carl.png"
+              alt="Carl Vellotti"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-2xl object-cover shrink-0"
+            />
             <div>
               <h3 className="text-xl font-semibold text-[#0f172a]">Carl Vellotti</h3>
               <p className="mt-1 text-[#64748b]">
@@ -114,7 +119,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="text-sm text-[#0891B2] hover:underline"
                 >
-                  Twitter
+                  X / Twitter
                 </a>
                 <a
                   href="https://linkedin.com/in/carlvellotti"
@@ -161,9 +166,9 @@ export default function AboutPage() {
               <p className="text-[#64748b] text-sm">
                 Know about a product event in Seattle?{" "}
                 <a href="/submit" className="text-[#0891B2] hover:underline">
-                  Submit it here
+                  Send it my way
                 </a>{" "}
-                and help the community.
+                and I&apos;ll share it with everyone.
               </p>
             </div>
           </div>

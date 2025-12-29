@@ -1,10 +1,8 @@
-import { Calendar, Users, Mail, ArrowRight, MapPin } from "lucide-react";
+import { Calendar, Users, Mail, ArrowRight } from "lucide-react";
 import { EmailCapture, EventCard } from "@/components";
 import { getUpcomingEvents } from "@/data/events";
 
 const upcomingEvents = getUpcomingEvents(4);
-const featuredEvent = upcomingEvents.find((e) => e.featured);
-const otherEvents = upcomingEvents.filter((e) => !e.featured).slice(0, 2);
 
 export default function Home() {
   return (
@@ -22,12 +20,6 @@ export default function Home() {
         <div className="container-wide py-20 md:py-28 relative z-10">
           <div className="max-w-2xl mx-auto">
             <div className="text-center">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm text-white/90 mb-6 animate-fade-in-up stagger-1">
-                <MapPin className="w-4 h-4 text-[#22C55E]" />
-                For product people in the Pacific Northwest
-              </div>
-
               {/* Headline */}
               <h1 className="heading-xl text-white text-balance animate-fade-in-up stagger-2">
                 Your Guide to Seattle&apos;s{" "}
@@ -36,7 +28,7 @@ export default function Home() {
 
               {/* Subheadline */}
               <p className="mt-6 text-xl text-white/80 max-w-xl mx-auto animate-fade-in-up stagger-3">
-                Seattle&apos;s product community is better than you think. We just needed a place to find each other.
+                Seattle&apos;s product community is huge, we just need a way to find each other.
               </p>
 
               {/* Email Capture */}
@@ -83,7 +75,7 @@ export default function Home() {
                 Curated Events
               </h3>
               <p className="mt-3 text-[#64748b]">
-                Product meetups, happy hours, workshops, and talks. We filter so you don&apos;t have to.
+                Product meetups, happy hours, workshops, and talks. I filter so you don&apos;t have to.
               </p>
             </div>
 
@@ -132,24 +124,21 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Featured Event */}
-          {featuredEvent && (
-            <div className="mt-10">
-              <EventCard event={featuredEvent} variant="featured" />
-            </div>
-          )}
-
-          {/* Other Events */}
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {otherEvents.map((event) => (
-              <EventCard key={event.id} event={event} />
+          {/* Events */}
+          <div className="mt-10 flex flex-col gap-4">
+            {upcomingEvents.map((event) => (
+              <EventCard
+                key={event.id}
+                event={event}
+                variant={event.featured ? "featured" : "default"}
+              />
             ))}
           </div>
 
           {/* Submit CTA */}
           <div className="mt-10 text-center">
             <p className="text-[#64748b]">
-              Know about an event we should feature?
+              Know about an event I should feature?
             </p>
             <a
               href="/submit"

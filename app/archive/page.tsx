@@ -22,7 +22,7 @@ const newsletterIssues = [
     title: "December 2024: Holiday Edition",
     date: "2024-12-01",
     preview:
-      "End-of-year wrap parties, holiday networking events, and our picks for product books to read over the break.",
+      "End-of-year wrap parties, holiday networking events, and my picks for product books to read over the break.",
     url: "#",
   },
   {
@@ -30,7 +30,7 @@ const newsletterIssues = [
     title: "November 2024: Conference Season Recap",
     date: "2024-11-01",
     preview:
-      "What we learned at this fall's product conferences, plus job openings at companies that are actually hiring.",
+      "What I learned at this fall's product conferences, plus job openings at companies that are actually hiring.",
     url: "#",
   },
 ];
@@ -90,7 +90,7 @@ export default function ArchivePage() {
               </div>
               <h3 className="heading-sm text-[#0f172a]">No issues yet</h3>
               <p className="mt-2 text-[#64748b]">
-                We&apos;re just getting started. Subscribe to get the first issue!
+                I&apos;m just getting started. Subscribe to get the first issue!
               </p>
             </div>
           )}
@@ -104,7 +104,7 @@ export default function ArchivePage() {
           <p className="mt-2 text-[#64748b]">
             Get Seattle product events delivered to your inbox monthly.
           </p>
-          <a href="/#subscribe" className="btn btn-md btn-green mt-6 inline-flex">
+          <a href="/subscribe" className="btn btn-md btn-green mt-6 inline-flex">
             Subscribe Now
           </a>
         </div>
