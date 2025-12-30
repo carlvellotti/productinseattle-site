@@ -6,13 +6,14 @@ import { getUpcomingEvents } from "@/data/events";
 export const metadata: Metadata = {
   title: "Seattle PM Events & Product Management Meetups",
   description:
-    "Find Seattle product management events, PM meetups, networking happy hours, and tech conferences. Updated weekly with the best events for product people in Seattle.",
+    "Find and host Seattle product management events. PM meetups, networking happy hours, and tech conferences. Updated weekly - or add your own event.",
   keywords: [
     "Seattle PM events",
     "Seattle product management events",
     "Seattle product manager meetup",
     "Seattle tech networking",
     "product management meetup Seattle",
+    "host PM event Seattle",
   ],
 };
 
@@ -83,12 +84,12 @@ export default function EventsPage() {
       {/* Submit CTA */}
       <section className="py-12 bg-[#F0FDF4]">
         <div className="container-wide text-center">
-          <h3 className="heading-sm text-[#0f172a]">Know about an event?</h3>
+          <h3 className="heading-sm text-[#0f172a]">Hosting something?</h3>
           <p className="mt-2 text-[#64748b]">
-            Help me keep this list fresh. Submit events you think Seattle product folks should know about.
+            Get your event in front of Seattle&apos;s product community. Finding attendees shouldn&apos;t be the hard part.
           </p>
           <a href="/submit" className="btn btn-md btn-green mt-6 inline-flex">
-            Submit an Event
+            Add Your Event
           </a>
         </div>
       </section>

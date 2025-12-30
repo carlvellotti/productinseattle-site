@@ -6,8 +6,8 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/events", label: "Upcoming Events" },
+  { href: "/submit", label: "Host an Event" },
   { href: "/archive", label: "Archive" },
-  { href: "/submit", label: "Submit Event" },
   { href: "/about", label: "About" },
 ];
 

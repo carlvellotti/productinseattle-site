@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Product in Seattle",
   },
   description:
-    "Your guide to Seattle's product scene. Events, jobs, and community for product people in the Pacific Northwest.",
+    "Building Seattle's product community, one event at a time. Find events worth attending. Host your own and reach the community.",
   keywords: [
     "Seattle PM events",
     "Seattle product management events",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "product management Seattle",
     "PM networking Seattle",
     "Seattle tech meetups",
-    "Pacific Northwest product",
+    "host PM event Seattle",
     "PNW tech events",
   ],
   authors: [{ name: "Carl Vellotti" }],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Product in Seattle",
     title: "Product in Seattle - Seattle's Product Community",
     description:
-      "Your guide to Seattle's product scene. Events, jobs, and community for product people in the Pacific Northwest.",
+      "Building Seattle's product community, one event at a time. Find events worth attending. Host your own and reach the community.",
     images: [
       {
         url: "/opengraph-image.jpg",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Product in Seattle - Seattle's Product Community",
     description:
-      "Your guide to Seattle's product scene. Events, jobs, and community for product people in the Pacific Northwest.",
+      "Building Seattle's product community, one event at a time. Find events worth attending. Host your own and reach the community.",
     images: ["/opengraph-image.jpg"],
   },
   robots: {

@@ -2,7 +2,7 @@ import { Calendar, Users, Mail, ArrowRight } from "lucide-react";
 import { EmailCapture, EventCard } from "@/components";
 import { getUpcomingEvents } from "@/data/events";
 
-const upcomingEvents = getUpcomingEvents(4);
+const upcomingEvents = getUpcomingEvents();
 
 export default function Home() {
   return (
@@ -22,8 +22,8 @@ export default function Home() {
             <div className="text-center">
               {/* Headline */}
               <h1 className="heading-xl text-white text-balance animate-fade-in-up stagger-2">
-                Your Guide to Seattle&apos;s{" "}
-                <span className="text-[#22C55E]">Product Scene</span>
+                Building Seattle&apos;s{" "}
+                <span className="text-[#22C55E]">Product Community</span>
               </h1>
 
               {/* Subheadline */}
@@ -58,10 +58,10 @@ export default function Home() {
           <div className="text-center max-w-2xl mx-auto">
             <div className="divider-green mx-auto" />
             <h2 className="mt-6 heading-lg text-[#0f172a]">
-              What&apos;s in the newsletter?
+              How it works
             </h2>
             <p className="mt-4 text-lg text-[#64748b]">
-              Monthly updates on the Seattle product scene. No fluff, no spam—just stuff worth your time.
+              Find events to attend. Host your own and reach the community. One email a month keeps you in the loop.
             </p>
           </div>
 
@@ -72,10 +72,10 @@ export default function Home() {
                 <Calendar className="w-7 h-7 text-[#22C55E]" />
               </div>
               <h3 className="mt-6 text-xl font-semibold text-[#0f172a]">
-                Curated Events
+                Find Events
               </h3>
               <p className="mt-3 text-[#64748b]">
-                Product meetups, happy hours, workshops, and talks. I filter so you don&apos;t have to.
+                Meetups, happy hours, workshops, and talks—all in one place. No more digging through five different platforms.
               </p>
             </div>
 
@@ -85,10 +85,10 @@ export default function Home() {
                 <Users className="w-7 h-7 text-[#0891B2]" />
               </div>
               <h3 className="mt-6 text-xl font-semibold text-[#0f172a]">
-                Local Community
+                Host Your Own
               </h3>
               <p className="mt-3 text-[#64748b]">
-                Connect with product people across Seattle—big tech, startups, agencies. All levels welcome.
+                Organizing something? Get it in front of Seattle&apos;s product community. Finding attendees shouldn&apos;t be the hard part.
               </p>
             </div>
 
@@ -98,10 +98,10 @@ export default function Home() {
                 <Mail className="w-7 h-7 text-[#22C55E]" />
               </div>
               <h3 className="mt-6 text-xl font-semibold text-[#0f172a]">
-                Signal Over Noise
+                Stay in the Loop
               </h3>
               <p className="mt-3 text-[#64748b]">
-                One email a month. Only the good stuff—events, jobs at real companies, local insights.
+                One email a month with the best events coming up. No spam, no noise—just what&apos;s worth your time.
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="divider-teal" />
               <h2 className="mt-4 heading-lg text-[#0f172a]">Upcoming Events</h2>
               <p className="mt-2 text-[#64748b]">
-                What&apos;s happening in Seattle&apos;s product scene.
+                Community events and curated picks from around Seattle.
               </p>
             </div>
             <a href="/events" className="link-underline text-sm font-semibold">
@@ -138,13 +138,13 @@ export default function Home() {
           {/* Submit CTA */}
           <div className="mt-10 text-center">
             <p className="text-[#64748b]">
-              Know about an event I should feature?
+              Hosting something? Get it in front of the community.
             </p>
             <a
               href="/submit"
               className="mt-2 inline-flex items-center gap-2 text-[#0891B2] font-semibold hover:text-[#164E63] transition-colors"
             >
-              Submit an event
+              Add your event
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -156,8 +156,8 @@ export default function Home() {
         <div className="container-wide">
           <EmailCapture
             variant="card"
-            title="Stay in the loop"
-            description="Get Seattle product events delivered to your inbox. Monthly updates, no spam."
+            title="Join the community"
+            description="Monthly updates on the best events happening in Seattle. One email, no spam."
           />
         </div>
       </section>

@@ -5,13 +5,13 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "Subscribe",
   description:
-    "Get Seattle product events delivered to your inbox. Monthly updates on meetups, workshops, and community happenings.",
+    "Join Seattle's product community. Monthly updates on the best events, plus the chance to promote your own.",
 };
 
 const benefits = [
-  "Curated events worth your time",
-  "Local jobs at real companies",
-  "Community insights and updates",
+  "Best events delivered monthly",
+  "Promote your own events to the community",
+  "Connect with Seattle product people",
 ];
 
 export default function SubscribePage() {
@@ -22,15 +22,14 @@ export default function SubscribePage() {
           <div className="max-w-xl mx-auto text-center">
             {/* Headline */}
             <h1 className="heading-xl text-[#0f172a] animate-fade-in-up">
-              Your guide to Seattle&apos;s{" "}
-              <span className="text-[#22C55E]">product scene</span>
+              Building Seattle&apos;s{" "}
+              <span className="text-[#22C55E]">product community</span>
             </h1>
 
             {/* Subheadline */}
             <p className="mt-6 text-xl text-[#64748b] animate-fade-in-up stagger-1">
-              Monthly updates on the best product events, jobs at companies
-              worth joining, and what&apos;s happening in the Seattle product
-              community.
+              Find events worth attending. Host your own and reach the community.
+              One email a month keeps you connected.
             </p>
 
             {/* Email Capture */}

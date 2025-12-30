@@ -6,7 +6,7 @@ import { EmailCapture } from "@/components";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Product in Seattle is a community newsletter for product people in the Pacific Northwest. Learn more about who I am and why I started this.",
+    "Product in Seattle is a community hub for product people in the Pacific Northwest. Find events, host your own, and connect with Seattle's PM community.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="max-w-2xl">
             <h1 className="heading-xl">About Product in Seattle</h1>
             <p className="mt-4 text-xl text-white/80">
-              Seattle&apos;s product community is better than you think. I just wanted to make it easier to find each other.
+              Building Seattle&apos;s product community, one event at a time.
             </p>
           </div>
         </div>
@@ -32,18 +32,18 @@ export default function AboutPage() {
             <p className="text-[#475569] mt-4">
               Seattle has one of the densest concentrations of product people
               in the world. Amazon, Microsoft, Meta, Google, plus hundreds of
-              startups and mid-size companies. But for a long time, there wasn&apos;t
-              a central place to find out what&apos;s happening in the local product scene.
+              startups and mid-size companies. But there&apos;s never been a central
+              place for us to organize.
             </p>
             <p className="text-[#475569] mt-4">
-              Events get posted across LinkedIn, Meetup, Eventbrite, Luma, and
-              random Slack channels. Jobs show up and disappear. Great people
-              are out there, but finding them takes work.
+              Events get scattered across LinkedIn, Meetup, Eventbrite, Luma, and
+              random Slack channels. And if you want to host something yourself?
+              Finding attendees is harder than it should be.
             </p>
             <p className="text-[#475569] mt-4">
               <strong className="text-[#0f172a]">Product in Seattle</strong>{" "}
-              exists to make it easier. One newsletter, once a month, with the
-              events, jobs, and community updates that matter. That&apos;s it.
+              is the home base. Find events worth attending. Host your own and
+              reach the community. One email a month keeps everyone connected.
             </p>
           </div>
 
@@ -55,8 +55,8 @@ export default function AboutPage() {
                   1
                 </span>
                 <span>
-                  <strong className="text-[#0f172a]">Community over audience.</strong>{" "}
-                  I&apos;m building connections, not just an email list.
+                  <strong className="text-[#0f172a]">In-person matters.</strong>{" "}
+                  Every big break in my career came from showing up somewhere. Real relationships happen face-to-face.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -64,8 +64,8 @@ export default function AboutPage() {
                   2
                 </span>
                 <span>
-                  <strong className="text-[#0f172a]">Signal over noise.</strong>{" "}
-                  One good email beats ten forgettable ones.
+                  <strong className="text-[#0f172a]">Anyone can host.</strong>{" "}
+                  You don&apos;t need permission to bring people together. You just need a way to reach them.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -73,8 +73,8 @@ export default function AboutPage() {
                   3
                 </span>
                 <span>
-                  <strong className="text-[#0f172a]">Local matters.</strong>{" "}
-                  Generic product content is everywhere. Seattle-specific is rare.
+                  <strong className="text-[#0f172a]">Local is underrated.</strong>{" "}
+                  Generic product content is everywhere. A community you can actually meet? That&apos;s rare.
                 </span>
               </li>
             </ul>
@@ -161,14 +161,14 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-xl bg-[#F0FDF4] flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-[#22C55E]" />
                 </div>
-                <h3 className="font-semibold text-[#0f172a]">Submit an event</h3>
+                <h3 className="font-semibold text-[#0f172a]">Host an event</h3>
               </div>
               <p className="text-[#64748b] text-sm">
-                Know about a product event in Seattle?{" "}
+                Organizing something for Seattle product people?{" "}
                 <a href="/submit" className="text-[#0891B2] hover:underline">
-                  Send it my way
+                  Add your event
                 </a>{" "}
-                and I&apos;ll share it with everyone.
+                and reach the community.
               </p>
             </div>
           </div>

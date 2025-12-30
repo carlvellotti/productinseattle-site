@@ -74,7 +74,7 @@ export function EmailCapture({
           </h3>
           <p className="mt-3 text-white/80">
             {description ||
-              "Get Seattle product events delivered to your inbox. Monthly updates, no spam."}
+              "Join Seattle's product community. Monthly updates on the best events, no spam."}
           </p>
           <form onSubmit={handleSubmit} className="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
@@ -141,7 +141,7 @@ export function EmailCapture({
         </p>
       )}
       <p className={`mt-3 text-sm ${dark ? "text-white/60" : "text-[#64748b]"}`}>
-        Monthly updates on Seattle product events. No spam, ever.
+        Monthly updates on the best events. No spam, ever.
       </p>
     </form>
   );

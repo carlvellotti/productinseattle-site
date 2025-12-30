@@ -14,8 +14,8 @@ export function Footer() {
               Product in Seattle
             </Link>
             <p className="mt-3 text-white/70 max-w-sm">
-              Your guide to Seattle&apos;s product scene. Events, jobs, and community
-              for product people in the Pacific Northwest.
+              Building Seattle&apos;s product community, one event at a time.
+              Find events. Host your own. Connect with PMs across the city.
             </p>
           </div>
 
@@ -29,6 +29,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/submit" className="hover:text-white transition-colors">
+                  Host an Event
+                </Link>
+              </li>
+              <li>
                 <Link href="/subscribe" className="hover:text-white transition-colors">
                   Subscribe
                 </Link>
@@ -36,11 +41,6 @@ export function Footer() {
               <li>
                 <Link href="/archive" className="hover:text-white transition-colors">
                   Archive
-                </Link>
-              </li>
-              <li>
-                <Link href="/submit" className="hover:text-white transition-colors">
-                  Submit Event
                 </Link>
               </li>
               <li>
