@@ -49,9 +49,9 @@ export const metadata: Metadata = {
       "Building Seattle's product community, one event at a time. Find events worth attending. Host your own and reach the community.",
     images: [
       {
-        url: "/opengraph-image.jpg",
-        width: 2400,
-        height: 1260,
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "Product in Seattle",
       },
     ],
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Product in Seattle - Seattle's Product Community",
     description:
       "Building Seattle's product community, one event at a time. Find events worth attending. Host your own and reach the community.",
-    images: ["/opengraph-image.jpg"],
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
