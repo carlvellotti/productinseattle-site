@@ -19,8 +19,8 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
     ? typeColors[event.type]
     : { bg: "bg-[#F1F5F9]", text: "text-[#475569]" };
 
-  // Parse date for display
-  const dateObj = new Date(event.date);
+  // Parse date for display - append T00:00:00 to treat as local midnight, not UTC
+  const dateObj = new Date(event.date + "T00:00:00");
   const month = dateObj.toLocaleDateString("en-US", { month: "short" });
   const day = dateObj.getDate();
   const weekday = dateObj.toLocaleDateString("en-US", { weekday: "short" });

@@ -27,6 +27,19 @@ export const events: Event[] = [
   // ============================================
 
   {
+    id: "product-leader-summit-jan-2026",
+    title: "Product Leader Summit Community - Seattle Meetup",
+    date: "2026-01-15",
+    time: "7:00 PM - 9:00 PM",
+    location: "Location available upon registration",
+    neighborhood: "TBD",
+    description: "Community-run gathering for product leaders in Seattle. Expand your network and dig into meaningful conversations about leading product teams. Complimentary beverages included.",
+    url: "https://luma.com/ss3hmp6r?tk=E1EgmV",
+    type: "networking",
+    cost: "Free",
+    carlsNote: "Being run by my friend Dina! Great opportunity to connect with other product leaders.",
+  },
+  {
     id: "lennys-meetup-jan-2026",
     title: "Lenny's Newsletter Meetup Seattle",
     date: "2026-01-22",
