@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 
 interface EmailCaptureProps {
@@ -19,6 +19,16 @@ export function EmailCapture({
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [referralCode, setReferralCode] = useState<string | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const r = params.get("r");
+    // Only accept short alphanumeric codes (our codes are 4 chars)
+    if (r && /^[a-z0-9]{1,10}$/i.test(r)) {
+      setReferralCode(r);
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,11 +36,10 @@ export function EmailCapture({
     setErrorMessage("");
 
     try {
-      // TODO: Replace with actual Beehiiv API endpoint
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, referralCode }),
       });
 
       if (!response.ok) {

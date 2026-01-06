@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const { email, referralCode } = await request.json();
 
     if (!email || !email.includes("@")) {
       return NextResponse.json(
@@ -36,6 +36,7 @@ export async function POST(request: NextRequest) {
           send_welcome_email: true,
           utm_source: "productinseattle.com",
           utm_medium: "website",
+          ...(referralCode && { utm_campaign: referralCode }),
         }),
       }
     );
