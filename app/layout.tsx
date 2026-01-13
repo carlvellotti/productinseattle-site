@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
-import { Nav, Footer, GoogleAnalytics } from "@/components";
+import { Nav, Footer, Analytics } from "@/components";
 import "./globals.css";
-
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -84,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bricolage.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col">
-        {GA_MEASUREMENT_ID && <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />}
+        <Analytics />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
