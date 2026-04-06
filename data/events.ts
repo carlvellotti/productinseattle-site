@@ -321,6 +321,154 @@ export const events: Event[] = [
     cost: "Free",
     carlsNote: "",
   },
+
+  // ============================================
+  // APRIL 2026
+  // ============================================
+
+  {
+    id: "producttank-happy-hour-apr-2026",
+    title: "ProductTank Seattle: Happy Hour Networking",
+    date: "2026-04-07",
+    time: "5:00 PM",
+    location: "Chainline Brewing Company Taproom, Kirkland",
+    neighborhood: "Kirkland",
+    description:
+      "Spring networking happy hour with the PM community. Parking validated at bar. Sponsored by Auth0.",
+    url: "https://www.meetup.com/producttank-seattle/events/313840852/",
+    type: "networking",
+    cost: "Free",
+    carlsNote: "ProductTank is one of the OG PM communities. Always a solid crowd and good conversations, especially if you're on the Eastside.",
+  },
+  {
+    id: "ai-chatbots-risks-realities-apr-2026",
+    title: "The Risks and Realities of AI Chatbots",
+    date: "2026-04-07",
+    time: "6:00 PM - 7:30 PM",
+    location: "Seattle Central Library, 1st Floor Auditorium",
+    neighborhood: "Downtown",
+    description:
+      "Kashmir Hill (NYT) and Jeff Horwitz (Reuters) on AI chatbot harms, moderated by KUOW's Monica Nickelsburg. Co-sponsored by UW Center for an Informed Public.",
+    url: "https://www.societyandtechnology.uw.edu/2026/03/16/register-now-for-the-risks-and-realities-of-ai-chatbots-event-on-april-7-2026-at-6-pm-at-the-seattle-central-library/",
+    type: "talk",
+    cost: "Free",
+    carlsNote: "Kashmir Hill and Jeff Horwitz are two of the sharpest tech journalists out there. Free, downtown, and genuinely important subject matter. Don't sleep on this one.",
+  },
+  {
+    id: "women-ai-inventing-tomorrow-apr-2026",
+    title: "Women + AI: Inventing Tomorrow (IWD Celebration)",
+    date: "2026-04-08",
+    time: "5:30 PM",
+    location: "Blueprint, 2600 116th Ave NE, Bellevue",
+    neighborhood: "Bellevue",
+    description:
+      "Panel discussion on AI/ML/DS, lightning talks, and networking. Co-hosted by Seattle Spark+AI, WiMLDS, and PyLadies Seattle. Food by Microsoft & Databricks, swag from Google.",
+    url: "https://www.meetup.com/seattle-spark-meetup/events/313304465/",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "Stacked lineup of co-hosts and sponsors. If you're a woman in AI or an ally, this is a great room to be in. Food and swag covered too.",
+  },
+  {
+    id: "lennys-meetup-apr-2026",
+    title: "Lenny's Newsletter Meetup in Seattle",
+    date: "2026-04-09",
+    time: "6:00 PM - 9:00 PM",
+    location: "Seattle (venue details upon registration)",
+    neighborhood: "TBD",
+    description:
+      "Product and growth professionals from Lenny's community gather for drinks and conversation. Free drinks courtesy of Clerk.",
+    url: "https://luma.com/tvd9sodb",
+    type: "networking",
+    cost: "Free",
+    featured: true,
+    carlsNote:
+      "I'm hosting this one! Come hang with the Lenny's community. Free drinks courtesy of Clerk.",
+  },
+  {
+    id: "ai-tinkerers-dev-tools-apr-2026",
+    title: "AI Tinkerers Seattle: AI Dev Tool Track",
+    date: "2026-04-13",
+    time: "6:00 PM - 9:00 PM",
+    location: "Seattle (venue TBD)",
+    neighborhood: "TBD",
+    description:
+      "In-person meetup with lightning demos of AI dev tools (no slides allowed). Sponsored by Actual AI, DevPlan, and Qumulo. 165+ attending.",
+    url: "https://seattle.aitinkerers.org/",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "One of the best AI builder meetups in Seattle. Lightning demos only, no slides, so you actually see real tools in action. 165+ people expected.",
+  },
+  {
+    id: "new-tech-seattle-apr-2026",
+    title: "New Tech Seattle: April 2026 Meetup",
+    date: "2026-04-14",
+    time: "5:30 PM",
+    location: "The Collective Seattle, 400 Dexter Ave N",
+    neighborhood: "South Lake Union",
+    description:
+      "The PNW's largest monthly tech event featuring 8-minute founder presentations, networking, food and hosted drinks. 60,000+ member community.",
+    url: "https://luma.com/newtech?e=evt-hrazbEVWoxH1raO",
+    type: "networking",
+    cost: "~$20",
+    carlsNote: "The startup demos are always a mixed bag but the networking is consistently great. Good cross-section of PMs, founders, and engineers in SLU.",
+  },
+  {
+    id: "ai-tinkerers-gtm-apr-2026",
+    title: "AI Tinkerers Seattle: GTM Engineering",
+    date: "2026-04-22",
+    time: "6:00 PM - 9:00 PM",
+    location: "Seattle (venue TBD)",
+    neighborhood: "TBD",
+    description:
+      "AI-driven growth systems meetup. Sponsored by Tarka. 50 vetted builders.",
+    url: "https://seattle.aitinkerers.org/",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "Different flavor from the dev tools track. This one's focused on go-to-market and growth. Smaller group (50 people), more curated. Worth it if you're on the GTM side of product.",
+  },
+  {
+    id: "ai-sprint-hbs-apr-2026",
+    title:
+      "The 2-Hour AI Sprint: Discover, Validate, and Launch Your Own App",
+    date: "2026-04-23",
+    time: "5:30 PM - 8:30 PM",
+    location: "Washington 1000, 1000 Olive Way, Seattle",
+    neighborhood: "Capitol Hill",
+    description:
+      "HBS Club of Seattle + We Build With AI. Use Lovable and Lenny's Newsletter dataset to vibe-code an app in 90 minutes. Finalists demo live.",
+    url: "https://www.hbsseattle.com/event-details-registration/the-2-hour-ai-sprint-discover-validate-and-launch-your-own-app",
+    type: "workshop",
+    cost: "$10 - $30",
+    carlsNote: "Vibe-coding an app in 90 minutes using Lenny's dataset? This is the kind of event I wish existed a year ago. Great if you want to build something real in a room full of builders.",
+  },
+  {
+    id: "pdma-seattle-spring-apr-2026",
+    title: "PDMA Seattle Spring Meetup",
+    date: "2026-04-23",
+    time: "6:30 PM - 9:30 PM",
+    location: "Side Hustle: Taproom & La Vida Social Cuisine, Kirkland",
+    neighborhood: "Kirkland",
+    description:
+      "PDMA Seattle's first in-person spring event. Networking games, a panel with tech and product management experts, and good vibes at a local taproom. Max capacity 60.",
+    url: "https://luma.com/wk90w540",
+    type: "networking",
+    cost: "Free",
+    carlsNote: "PDMA's first in-person Seattle event. Exciting to see them show up locally. Small venue (60 cap) so register early. Kirkland spot with good parking.",
+  },
+  {
+    id: "startup-networking-ascent-apr-2026",
+    title: "Startup Tech & AI Networking | Ascent Valley",
+    date: "2026-04-30",
+    time: "7:00 PM - 10:00 PM",
+    location: "1525 1st Ave, Seattle",
+    neighborhood: "Downtown",
+    description:
+      "Startup pitch session, investor networking, and meet AI founders and VCs.",
+    url: "https://www.eventbrite.com/e/startup-tech-ai-networking-startup-ascent-seattle-tickets-1984767044659",
+    type: "networking",
+    cost: "TBD",
+    carlsNote: "Late-night startup crowd with a pitch session and investor networking. Good if you're exploring the founder side of things or just want to see what's being built.",
+  },
 ];
 
 // Helper functions for filtering/sorting
