@@ -371,10 +371,10 @@ export const events: Event[] = [
   {
     id: "lennys-meetup-apr-2026",
     title: "Lenny's Newsletter Meetup in Seattle",
-    date: "2026-04-09",
-    time: "6:00 PM - 9:00 PM",
-    location: "Seattle (venue details upon registration)",
-    neighborhood: "TBD",
+    date: "2026-04-14",
+    time: "6:00 PM - 8:00 PM",
+    location: "Stoup Brewing - Capitol Hill, 1158 Broadway, Seattle",
+    neighborhood: "Capitol Hill",
     description:
       "Product and growth professionals from Lenny's community gather for drinks and conversation. Free drinks courtesy of Clerk.",
     url: "https://luma.com/tvd9sodb",
