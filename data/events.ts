@@ -469,6 +469,96 @@ export const events: Event[] = [
     cost: "TBD",
     carlsNote: "Late-night startup crowd with a pitch session and investor networking. Good if you're exploring the founder side of things or just want to see what's being built.",
   },
+
+  // ============================================
+  // MAY 2026
+  // ============================================
+
+  {
+    id: "ai-tinkerers-dev-tools-may-2026",
+    title: "AI Tinkerers Seattle: AI Dev Tools Track",
+    date: "2026-05-05",
+    time: "6:00 PM - 9:00 PM",
+    location: "South Lake Union (exact venue shared with RSVPs)",
+    neighborhood: "South Lake Union",
+    description:
+      "Code-first intensive with live demos — no slides, no pitches. The 'Software Factory' approach. 159+ builders registered, vetted attendee list. High-signal room for anyone building with AI dev tools.",
+    url: "https://seattle.aitinkerers.org/",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "Code-first intensive with live demos. No slides, no pitches. 159+ builders already registered and the attendee list is vetted, so this is a high-signal room if you're building with AI dev tools.",
+  },
+  {
+    id: "ai-pm-skills-workshop-may-2026",
+    title: "AI PM Skills Workshop: From Discovery to Prototyping",
+    date: "2026-05-09",
+    time: "1:00 PM - 3:30 PM",
+    location: "Kirkland (exact location shared upon registration)",
+    neighborhood: "Kirkland",
+    description:
+      "Seattle Tech Forum + PDMA Seattle hands-on workshop applying AI tools from product discovery to prototyping. Led by UW lecturer Shaili Guru with support from Amy Peltonen and Amandeep Singh.",
+    url: "https://luma.com/9t0t0u9z",
+    type: "workshop",
+    cost: "$25",
+    carlsNote: "Seattle Tech Forum + PDMA Seattle teaming up for a hands-on workshop on applying AI tools from product discovery to prototyping. Led by UW lecturer Shaili Guru. If you're a PM who hasn't started using AI in your workflow yet, this is a great on-ramp.",
+  },
+  {
+    id: "new-tech-seattle-may-2026",
+    title: "New Tech Seattle: May 2026 Meetup",
+    date: "2026-05-12",
+    time: "5:30 PM",
+    location: "The Collective Seattle, 400 Dexter Ave N",
+    neighborhood: "South Lake Union",
+    description:
+      "The PNW's largest monthly tech event. 8-minute startup presentations, block party-style networking, and hosted food and drinks. Presenters include founders from Autessa, SpectraInsight, and Loop8.",
+    url: "https://luma.com/jcj44fde",
+    type: "networking",
+    cost: "$20 - $27",
+    carlsNote: "The PNW's largest monthly tech event. 8-minute startup presentations, block party-style networking, and hosted food and drinks. Always a good cross-section of founders, engineers, and PMs in SLU.",
+  },
+  {
+    id: "lennys-meetup-may-2026",
+    title: "Lenny's Newsletter Meetup in Seattle",
+    date: "2026-05-21",
+    time: "6:00 PM - 9:00 PM",
+    location: "Queen Anne Beerhall, 203 W Thomas St",
+    neighborhood: "Queen Anne",
+    description:
+      "Product and growth professionals from Lenny's community gather for drinks and conversation. Free drinks courtesy of Strella.",
+    url: "https://luma.com/seo1uvla",
+    type: "networking",
+    cost: "Free",
+    featured: true,
+    carlsNote: "I'll be at this one. Lenny's community meetups are always a great room: in-depth conversations about product and growth with people who are actually in the work. Free drinks courtesy of Strella. Come through.",
+  },
+  {
+    id: "ai-tinkerers-gtm-may-2026",
+    title: "AI Tinkerers Seattle: GTM / Growth Track",
+    date: "2026-05-26",
+    time: "6:00 PM - 9:00 PM",
+    location: "Seattle (venue TBD)",
+    neighborhood: "TBD",
+    description:
+      "Live code-first demos of AI-driven growth systems. Focused on go-to-market engineering. Smaller, more curated group than the Dev Tools track.",
+    url: "https://seattle.aitinkerers.org/",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "Different flavor from the Dev Tools track earlier in the month. This one's focused on go-to-market and growth: live code-first demos of AI-driven growth systems. Smaller, more curated group. Worth it if you're on the GTM side of product.",
+  },
+  {
+    id: "meet-cofounder-may-2026",
+    title: "Meet Your Co-Founder: Startup Builders Night",
+    date: "2026-05-27",
+    time: "7:00 PM - 10:00 PM",
+    location: "The Taproom at Pike Place, 1525 1st Ave",
+    neighborhood: "Downtown",
+    description:
+      "40-80 curated participants. Structured networking sessions plus startup pitches from selected founders. For founders, engineers, PMs, and designers looking to connect and build.",
+    url: "https://www.eventbrite.com/e/meet-your-co-founder-startup-builders-night-in-seattle-tickets-1986684509849",
+    type: "networking",
+    cost: "Paid",
+    carlsNote: "40-80 curated participants. Structured networking sessions plus startup pitches from selected founders. Good if you're exploring the founder side of things, looking for a co-founder, or just want to see what's being built.",
+  },
 ];
 
 // Helper functions for filtering/sorting
