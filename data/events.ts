@@ -559,6 +559,126 @@ export const events: Event[] = [
     cost: "Paid",
     carlsNote: "40-80 curated participants. Structured networking sessions plus startup pitches from selected founders. Good if you're exploring the founder side of things, looking for a co-founder, or just want to see what's being built.",
   },
+
+  // ============================================
+  // JUNE 2026
+  // ============================================
+
+  {
+    id: "cursor-meetup-jun-2026",
+    title: "Cursor Meetup Seattle — June",
+    date: "2026-06-04",
+    time: "6:00 PM - 8:30 PM",
+    location: "Thinkspace, 1700 Westlake Ave N #200",
+    neighborhood: "South Lake Union",
+    description:
+      "Official Cursor meetup hosted by Shrey Shah and Adam Burgh of We Build With AI. New Cursor features, demos and lightning talks, and a Cursor team Q&A.",
+    url: "https://luma.com/dni0411f",
+    type: "talk",
+    cost: "Free",
+    carlsNote: "Engineers, PMs, designers, founders — anyone building with Cursor. Good warm-up if you're coming to mine on the 16th too.",
+  },
+  {
+    id: "ai-tinkerers-dev-tools-jun-2026",
+    title: "AI Tinkerers Seattle: AI Dev Tools Track",
+    date: "2026-06-08",
+    time: "6:00 PM - 9:00 PM",
+    location: "Near Westlake station (exact venue shared with RSVPs)",
+    neighborhood: "Downtown",
+    description:
+      "Code-first intensive — lightning demos, live code audits, and rapid-fire stack debates on IDEs, agents, and AI dev workflows. No slides, no pitches. 150+ builders registered, vetted attendee list.",
+    url: "https://seattle.aitinkerers.org/p/ai-dev-tools-track-seattle-june-8",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "One of the best AI builder meetups in Seattle. High-signal room if you're building with AI dev tools.",
+  },
+  {
+    id: "deep-tech-week-jun-2026",
+    title: "Deep Tech Week Seattle",
+    date: "2026-06-08",
+    time: "Multiple events (Jun 8-12)",
+    location: "Venues across Seattle (SURF Incubator, K&L Gates, Seattle Chamber, and more)",
+    neighborhood: "Citywide",
+    description:
+      "A decentralized, citywide week of free in-person mixers, demo days, and happy hours hosted by founders, operators, and investors. Browse the full calendar and RSVP per event.",
+    url: "https://www.deep-tech-week.com/seattle-2026",
+    type: "conference",
+    cost: "Free",
+    featured: true,
+    carlsNote: "If you do one thing this month, block out this week. Standouts: the DeepTech Founder Show & Tell and Jason Cavness Demo Day (both Mon 6/8), and Deep Tech After Dark, a curated happy hour (Thu 6/11).",
+  },
+  {
+    id: "new-tech-seattle-jun-2026",
+    title: "New Tech Seattle: June 2026 Meetup",
+    date: "2026-06-09",
+    time: "5:30 PM",
+    location: "The Collective Seattle, 400 Dexter Ave N",
+    neighborhood: "South Lake Union",
+    description:
+      "The PNW's largest monthly tech event — 8-minute founder presentations, block-party-style networking, and hosted food and drinks. This month it's an Arts + Tech Night co-hosted by Seattle Creates.",
+    url: "https://luma.com/kdsplr2m",
+    type: "networking",
+    cost: "$20 - $27",
+    carlsNote: "Always a good cross-section of founders, engineers, and PMs in SLU. Seattle Creates is bringing discounted $10 tickets this month via their Eventbrite.",
+  },
+  {
+    id: "cursor-product-teams-jun-2026",
+    title: "Cursor for Product Teams",
+    date: "2026-06-16",
+    time: "5:30 PM - 7:30 PM",
+    location: "PSL (Pioneer Square Labs), Seattle (exact location shared on RSVP)",
+    neighborhood: "Pioneer Square",
+    description:
+      "An official Cursor meetup on bringing AI coding tools to your whole product team. Hands-on mini-workshop to scaffold a shared team repo, plus lightning demos from people rolling Cursor out across their teams. No coding required.",
+    url: "https://luma.com/cursor-j2rl",
+    type: "workshop",
+    cost: "Free",
+    featured: true,
+    carlsNote: "I'm hosting this one! Built for PMs, designers, founders, and product leaders — you don't need to know how to code. Capped at 100. Come say hi.",
+  },
+  {
+    id: "arize-builders-jun-2026",
+    title: "Arize Builders Meetup — Seattle",
+    date: "2026-06-18",
+    time: "6:00 PM - 9:00 PM",
+    location: "Bellevue (exact location shared on RSVP)",
+    neighborhood: "Bellevue",
+    description:
+      "An evening of talks and networking for people building AI agents and shipping them to production — architecture decisions, evaluation strategies, and lessons from teams running agents today. Food and drinks provided.",
+    url: "https://luma.com/Seattle-builders-meetup",
+    type: "talk",
+    cost: "Free",
+    carlsNote: "More engineering-leaning than most of what I list, but if you're a PM working on AI features, the eval and 'how does this hold up outside the demo' conversations are exactly the ones worth having. Eastside-friendly.",
+  },
+  {
+    id: "lennys-meetup-jun-2026",
+    title: "Lenny's Newsletter Meetup in Bellevue",
+    date: "2026-06-23",
+    time: "6:00 PM - 8:00 PM",
+    location: "Bellevue (exact location shared on RSVP)",
+    neighborhood: "Bellevue",
+    description:
+      "Product and growth professionals from Lenny's community gather for drinks and conversation. Free drinks courtesy of Clerk.",
+    url: "https://luma.com/2y3txzka",
+    type: "networking",
+    cost: "Free",
+    featured: true,
+    carlsNote: "I'll probably be at this one. Lenny's community meetups are always a great room — laid back, no agenda, just product and growth people having real conversations. Come say hi if you're around.",
+  },
+  {
+    id: "ai-tinkerers-gtm-jun-2026",
+    title: "AI Tinkerers Seattle: GTM / Growth Track",
+    date: "2026-06-30",
+    time: "6:00 PM - 9:00 PM",
+    location: "Seattle (venue TBD)",
+    neighborhood: "TBD",
+    description:
+      "Live code-first demos of AI-driven growth systems, focused on go-to-market. Smaller, more curated group (around 50) than the Dev Tools track.",
+    url: "https://seattle.aitinkerers.org/",
+    type: "workshop",
+    cost: "Free",
+    carlsNote: "Worth it if you're on the GTM side of product.",
+  },
 ];
 
 // Helper functions for filtering/sorting
