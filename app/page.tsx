@@ -2,9 +2,11 @@ import { Calendar, Users, Mail, ArrowRight } from "lucide-react";
 import { EmailCapture, EventCard } from "@/components";
 import { getUpcomingEvents } from "@/data/events";
 
-const upcomingEvents = getUpcomingEvents();
+// Evaluate dates on each request, rather than freezing listings at build time.
+export const dynamic = "force-dynamic";
 
 export default function Home() {
+  const upcomingEvents = getUpcomingEvents();
   return (
     <div>
       {/* Hero Section */}
@@ -134,6 +136,12 @@ export default function Home() {
               />
             ))}
           </div>
+
+          {upcomingEvents.length === 0 && (
+            <p className="mt-6 text-[#64748b]">
+              We&apos;re curating the next roundup. Subscribe below to hear when new events are added.
+            </p>
+          )}
 
           {/* Submit CTA */}
           <div className="mt-10 text-center">

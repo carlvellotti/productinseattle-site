@@ -679,11 +679,161 @@ export const events: Event[] = [
     cost: "Free",
     carlsNote: "Worth it if you're on the GTM side of product.",
   },
+  // September 2026 — sent newsletter, September 9.
+  {
+    "id": "claude-builders-bellevue-sep-2026",
+    "title": "Claude Builders Bellevue",
+    "date": "2026-09-12",
+    "time": "11:00 AM - 2:00 PM",
+    "location": "Capital One Café, 10500 NE 8th St (Downtown Bellevue)",
+    "neighborhood": "Downtown Bellevue",
+    "description": "A relaxed monthly build-together on the Eastside, hosted by Holly McAninch. No-code friendly; bring a laptop and an idea.",
+    "url": "https://luma.com/ei0eokll",
+    "type": "workshop",
+    "cost": "Free",
+    "carlsNote": "A good warm-up if you are thinking about showing something at PM Builders Night."
+  },
+  {
+    "id": "new-tech-seattle-sep-2026",
+    "title": "New Tech Seattle September Meetup",
+    "date": "2026-09-15",
+    "time": "5:30 - 7:45 PM",
+    "location": "The Collective, 400 Dexter Ave N (South Lake Union)",
+    "neighborhood": "South Lake Union",
+    "description": "Founder presentations and block-party networking at The Collective. A Luma ticket is required; a Meetup RSVP alone does not grant entry.",
+    "url": "https://luma.com/emlnef1e",
+    "type": "networking",
+    "cost": "$20 advance / $27 day-of",
+    "carlsNote": "You need the Luma ticket; a Meetup RSVP alone does not get you in."
+  },
+  {
+    "id": "ai-agents-seattle-sep-2026",
+    "title": "AI Agents Seattle (September)",
+    "date": "2026-09-15",
+    "time": "5:30 - 8:30 PM",
+    "location": "Foundations, 1605 Boylston Ave (Capitol Hill)",
+    "neighborhood": "Capitol Hill",
+    "description": "Jeremy Adams from Neo4j on graph memory for agents, plus the Boundary founders on Codemode.",
+    "url": "https://luma.com/sxly2406",
+    "type": "talk",
+    "cost": "Free",
+    "carlsNote": "Conflicts with New Tech. If you want the technical conversation, this one. If you want the room, New Tech."
+  },
+  {
+    "id": "julie-averill-buyers-seat-sep-2026",
+    "title": "Founder Lessons from the Buyer's Seat: Fireside with Julie Averill",
+    "date": "2026-09-16",
+    "time": "4:00 - 6:00 PM",
+    "location": "AI House, 2801 Alaskan Way, Pier 70 (Waterfront)",
+    "neighborhood": "Waterfront",
+    "description": "A fireside with former Lululemon CIO Julie Averill on what enterprise buyers want from AI products and what makes them say no.",
+    "url": "https://luma.com/aihouse-nh8e",
+    "type": "talk",
+    "cost": "Free",
+    "carlsNote": "Starts at 4, so it is a leave-work-early one."
+  },
+  {
+    "id": "claude-community-workflows-sep-2026",
+    "title": "Claude Community Seattle: What's in a Workflow?",
+    "date": "2026-09-17",
+    "time": "5:30 - 7:30 PM",
+    "location": "SURF Incubator, 999 3rd Ave (Downtown)",
+    "neighborhood": "Downtown",
+    "description": "Three speakers on building real workflows with Claude, followed by open discussion.",
+    "url": "https://luma.com/claude-uwj2",
+    "type": "talk",
+    "cost": "Free",
+    "carlsNote": "Official Anthropic event."
+  },
+  {
+    "id": "ai-rooftop-mixer-sep-2026",
+    "title": "AI Rooftop Mixer Ep. 6",
+    "date": "2026-09-18",
+    "time": "5:00 - 8:00 PM",
+    "location": "Wall & Vine rooftop, 2505 3rd Ave #324 (Belltown)",
+    "neighborhood": "Belltown",
+    "description": "TF Labs rooftop mixer with drinks, pizza, a hacker corner, and short live prototype demos.",
+    "url": "https://luma.com/jcf2ghle",
+    "type": "social",
+    "cost": "Free (optional $10 ticket helps cover drinks and pizza)",
+    "carlsNote": "A Friday sunset on a Belltown rooftop in September. Hopefully the weather is kind."
+  },
+  {
+    "id": "uxperience-net-walking-picnic-sep-2026",
+    "title": "UXperience Seattle Net-Walking Picnic",
+    "date": "2026-09-19",
+    "time": "11:00 AM - 2:00 PM",
+    "location": "Meet at Volunteer Park Cafe, 1501 17th Ave E (Capitol Hill)",
+    "neighborhood": "Capitol Hill",
+    "description": "Networking in rotating pairs on a walk through Volunteer Park, with a picnic stop. Rain or shine; coffee at the cafe if needed.",
+    "url": "https://www.meetup.com/seattleuxpros/events/316263651/",
+    "type": "networking",
+    "cost": "Free (buy your own lunch)",
+    "carlsNote": "Bring your own lunch or buy something nearby."
+  },
+  {
+    "id": "firefly-social-sep-2026",
+    "title": "Firefly Social: Tech Tuesday in Cap Hill",
+    "date": "2026-09-22",
+    "time": "6:00 - 8:00 PM",
+    "location": "a/stir, 818 E Pike St (Capitol Hill)",
+    "neighborhood": "Capitol Hill",
+    "description": "A casual tech social with conversation cards on job hunting, startups, and where the industry is going. No panels or pitches.",
+    "url": "https://www.eventbrite.com/e/firefly-social-tech-tuesday-in-cap-hill-tickets-1998842106548",
+    "type": "social",
+    "cost": "Free (buy a drink to support the venue)",
+    "carlsNote": "Low stakes, central, and a good first event if you are new to the scene."
+  },
+  {
+    "id": "kalles-smart-cookies-sep-2026",
+    "title": "Kalles Group Smart Cookies: AI Ambition is Outrunning Execution",
+    "date": "2026-09-23",
+    "time": "6:00 - 8:00 PM",
+    "location": "Industrious University District, 4311 11th Ave NE (check in with staff in the lobby)",
+    "neighborhood": "University District",
+    "description": "Leaders from Tableau, PitchBook, the Gates Foundation, and Nordstrom discuss why AI pilots stall: delivery, adoption, governance, and risk.",
+    "url": "https://www.eventbrite.com/e/kalles-group-smart-cookies-ai-ambition-is-outrunning-execution-tickets-1998392125643",
+    "type": "talk",
+    "cost": "Free",
+    "carlsNote": "Meet staff in the lobby for check-in directions; see the ticket page for floor and access instructions."
+  },
+  {
+    "id": "lennys-meetup-sep-2026",
+    "title": "Lenny's Newsletter Meetup in Seattle",
+    "date": "2026-09-24",
+    "time": "6:00 - 9:00 PM",
+    "location": "Seattle (venue on RSVP)",
+    "neighborhood": "Seattle",
+    "description": "Lenny’s community gathers for drinks and conversation, hosted by Carl Vellotti, Riya Shrestha, and Annie Warner. Drinks covered by Revolut.",
+    "url": "https://luma.com/2nngp73e",
+    "type": "networking",
+    "cost": "Free, drinks covered by Revolut",
+    "featured": true,
+    "carlsNote": "I'm hosting this with Riya Shrestha and Annie Warner. Consistently the highest PM-density room in the city. Come find me."
+  },
+  {
+    "id": "pm-builders-night-sep-2026",
+    "title": "Full Stack PM Seattle: PM Builders Night",
+    "date": "2026-09-29",
+    "time": "6:00 - 8:00 PM",
+    "location": "AMLI Arc, Seattle (attendance instructions sent closer to the event)",
+    "neighborhood": "Seattle",
+    "description": "Three PMs share what they built, how they built it, what went wrong, and what they would do differently. Lightning talks, small groups, and networking.",
+    "url": "https://luma.com/thefull-4nt8",
+    "type": "talk",
+    "cost": "Free, with pizza and drinks",
+    "featured": true,
+    "carlsNote": "I'm hosting the first in-person event from The Full Stack PM. Free pizza and drinks, 60 spots, then a waitlist. Come say hi."
+  },
 ];
 
 // Helper functions for filtering/sorting
-export function getUpcomingEvents(limit?: number): Event[] {
-  const today = new Date().toISOString().split("T")[0];
+export function getUpcomingEvents(limit?: number, now: Date = new Date()): Event[] {
+  // Keep same-day events visible until midnight in Seattle, including during DST.
+  const today = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric", month: "2-digit", day: "2-digit",
+  }).format(now);
   const upcoming = events
     .filter((e) => e.date >= today)
     .sort((a, b) => a.date.localeCompare(b.date));

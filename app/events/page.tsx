@@ -3,10 +3,12 @@ import { Filter, Calendar } from "lucide-react";
 import { EventCard, EventStructuredData } from "@/components";
 import { getUpcomingEvents } from "@/data/events";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Seattle PM Events & Product Management Meetups",
   description:
-    "Find and host Seattle product management events. PM meetups, networking happy hours, and tech conferences. Updated weekly - or add your own event.",
+    "Find and host Seattle product management events. PM meetups, workshops, and networking happy hours. Curated monthly - or add your own event.",
   keywords: [
     "Seattle PM events",
     "Seattle product management events",
@@ -77,7 +79,11 @@ export default function EventsPage() {
             ))}
           </div>
 
-          {/* Empty state would go here */}
+          {allEvents.length === 0 && (
+            <p className="text-[#64748b]">
+              We&apos;re curating the next roundup. <a href="/subscribe" className="link-underline">Subscribe</a> to hear when new events are added.
+            </p>
+          )}
         </div>
       </section>
 
