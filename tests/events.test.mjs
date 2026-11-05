@@ -12,10 +12,20 @@ test("September roundup stays intact alongside later months", () => {
 
 test("October replaces September in upcoming listings", () => {
   const upcoming = getUpcomingEvents(undefined, new Date("2026-10-06T19:00:00Z"));
-  assert.equal(upcoming.length, 13);
-  assert.ok(upcoming.every(event => event.date.startsWith("2026-10")));
-  assert.equal(upcoming.filter(event => event.featured).length, 0);
-  assert.equal(new Set(upcoming.map(event => event.url)).size, 13);
+  const october = upcoming.filter(event => event.date.startsWith("2026-10"));
+  assert.equal(october.length, 13);
+  assert.ok(upcoming.every(event => event.date >= "2026-10-06"));
+  assert.ok(!upcoming.some(event => event.date.startsWith("2026-09")));
+  assert.equal(october.filter(event => event.featured).length, 0);
+  assert.equal(new Set(october.map(event => event.url)).size, 13);
+});
+
+test("November replaces October in upcoming listings", () => {
+  const upcoming = getUpcomingEvents(undefined, new Date("2026-11-05T20:00:00Z"));
+  assert.equal(upcoming.length, 9);
+  assert.ok(upcoming.every(event => event.date.startsWith("2026-11")));
+  assert.equal(upcoming.filter(event => event.featured).length, 1);
+  assert.equal(new Set(upcoming.map(event => event.url)).size, 9);
 });
 
 test("event ids are unique", () => {
@@ -35,5 +45,5 @@ test("winter dates use Pacific standard time", () => {
 });
 
 test("after the roundup expires there are no stale upcoming events", () => {
-  assert.deepEqual(getUpcomingEvents(undefined, new Date("2026-10-31T12:00:00Z")), []);
+  assert.deepEqual(getUpcomingEvents(undefined, new Date("2026-11-22T12:00:00Z")), []);
 });
